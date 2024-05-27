@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Los Angeles Mountains</title>
+	<style>
+		body {
+			background-image: url('https://source.unsplash.com/random/1600x900/?losangeles,mountains');
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+		}
+		.container {
+			text-align: center;
+		}
+		.title {
+			font-size: 48px;
+			font-weight: bold;
+			color: white;
+			margin-bottom: 50px;
+		}
+		.links {
+			display: flex;
+            position:absolute;
+			justify-content: center;
+            margin-bottom: 20px;
+		}
+		.link {
+			font-size: 24px;
+            
+			font-weight: bold;
+			color: white;
+			text-decoration: none;
+			margin: 0 10px;
+			padding: 10px;
+			border-radius: 5px;
+			background-color: rgba(255, 255, 255, 0.5);
+			transition: background-color 0.3s ease;
+		}
+		.link:hover {
+			background-color: rgba(255, 255, 255, 0.7);
+		}
+		@media (max-width: 768px) {
+			.title {
+				font-size: 32px;
+			}
+			.link {
+				font-size: 18px;
+				padding: 5px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Los Angeles Mountains</h1>
+		<div class="links">
+			<a class="link" href="https://example.com/history">History</a>
+			<a class="link" href="https://example.com/team">Team</a>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+///////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Table</title>
+<style>
+  table {
+    display: none; /* Initially hide the table */
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  #hoverText:hover + table {
+    display: table; /* Show the table when the text is hovered */
+  }
+</style>
+</head>
+<body>
+
+<p id="hoverText">Hover here to show table</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+    <tr>
+      <td>Data 4</td>
+      <td>Data 5</td>
+      <td>Data 6</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
